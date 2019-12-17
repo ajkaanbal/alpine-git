@@ -11,5 +11,7 @@ RUN apk add --update \
 RUN addgroup -g 1000 gituser && \
     adduser -D -u 1000 -G gituser gituser
 
+WORKDIR /home/gituser
+
 USER gituser
 
